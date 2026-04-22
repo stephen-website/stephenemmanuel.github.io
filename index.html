@@ -1,45 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Professional Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stephen Digital Hub | Premium Funnel Agency</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    body {
-      font-family: Arial;
+    * {
       margin: 0;
-      background: #f4f4f4;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
     }
-    header {
-      background: #111;
-      color: white;
-      padding: 20px;
-      text-align: center;
+
+    body {
+      background: #0b1220;
+      color: #e2e8f0;
     }
-    .container {
-      padding: 20px;
-      text-align: center;
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 30px;
+      z-index: 1000;
     }
-    .btn {
-      background: green;
-      color: white;
-      padding: 10px 20px;
+
+    nav h2 {
+      color: #38bdf8;
+      font-size: 18px;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      margin-left: 15px;
       text-decoration: none;
-      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+    }
+
+    header p {
+      margin-top: 15px;
+      color: #94a3b8;
+      max-width: 650px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    /* FUNNEL BOX */
+    .funnel {
+      background: #1e293b;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+
+    .submit-btn {
+      margin-top: 15px;
+      background: #22c55e;
+      color: black;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .pricing {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .price-box {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .price-box h3 {
+      color: #38bdf8;
+      font-size: 22px;
+    }
+
+    .price-box p {
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #0f172a;
+      color: #64748b;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
+<nav>
+  <h2>Stephen Digital Hub</h2>
+  <div>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#lead">Get Offer</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
 <header>
-  <h1>Welcome to My Website</h1>
-  <p>Learn | Earn | Grow Online</p>
+  <h1>We Turn Attention Into Sales</h1>
+  <p>We help brands get customers using powerful content, ads, and digital funnels that convert traffic into real money.</p>
+  <a class="btn" href="#lead">Get Free Promotion Plan</a>
 </header>
 
-<div class="container">
-  <h2>Start Your Online Journey</h2>
-  <p>This website will be used for content and online income.</p>
+<section id="services">
+  <h2>What We Do</h2>
+  <div class="grid">
+    <div class="card"><h3>Brand Exposure</h3><p>We put your business in front of real buyers.</p></div>
+    <div class="card"><h3>Sales Funnels</h3><p>We convert visitors into paying customers.</p></div>
+    <div class="card"><h3>Sponsored Ads</h3><p>We run campaigns that generate leads.</p></div>
+  </div>
+</section>
 
-  <a class="btn" href="https://wa.me/234XXXXXXXXXX">Contact Me</a>
-</div>
+<section id="pricing">
+  <h2>Simple Pricing</h2>
+  <div class="pricing">
+    <div class="price-box">
+      <h3>Starter</h3>
+      <p>Basic promotion</p>
+      <p>₦10,000</p>
+    </div>
+    <div class="price-box">
+      <h3>Growth</h3>
+      <p>Ads + Content</p>
+      <p>₦25,000</p>
+    </div>
+    <div class="price-box">
+      <h3>Premium</h3>
+      <p>Full Funnel System</p>
+      <p>₦50,000+</p>
+    </div>
+  </div>
+</section>
+
+<section id="lead">
+  <h2>Get Free Growth Plan</h2>
+  <div class="funnel">
+    <p>Enter your details and we will send you a custom promotion strategy.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <textarea placeholder="Your Business" required></textarea>
+      <button class="submit-btn" type="submit">Get My Plan</button>
+    </form>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Direct Contact</h2>
+  <p>Email: emmysteven31@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Stephen Digital Hub. All rights reserved.</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/23408149560951" target="_blank">WhatsApp</a>
 
 </body>
 </html>
